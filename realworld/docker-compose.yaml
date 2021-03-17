@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  node:
+    build: ./node
+    ports:
+      - "8080:8080"
+    image: "sjure/realworld_node:latest"
+  react:
+    build: ./react
+    ports:
+      - "80:80"
+    links:
+      - node
+    image: "sjure/realworld_react:latest"
