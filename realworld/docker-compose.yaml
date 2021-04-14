@@ -4,11 +4,11 @@ services:
     build: ./node
     ports:
       - "8080:8080"
-    image: "sjure/realworld_node:latest"
+    image: "sjure/real-kube-node:latest"
   react:
     build: ./react
     ports:
-      - "80:80"
+      - "3000:3000"
     links:
       - node
-    image: "sjure/realworld_react:latest"
+    image: "sjure/real-kube-react:latest"
