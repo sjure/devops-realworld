@@ -3,8 +3,9 @@ import _superagent from 'superagent';
 
 const superagent = superagentPromise(_superagent, global.Promise);
 
-const API_ROOT = document.location.protocol + "//" + document.location.hostname + ":8080/api";
+const API_ROOT = document.location.protocol + "//" + process.env.BACKEND_URI + ":"+ process.env.BACKEND_PORT;
 
+console.log(API_ROOT);
 const encode = encodeURIComponent;
 const responseBody = res => res.body;
 

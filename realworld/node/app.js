@@ -8,7 +8,6 @@ var http = require('http'),
     passport = require('passport'),
     errorhandler = require('errorhandler'),
     mongoose = require('mongoose');
-    dotenv = require('dotenv').config();
 var isProduction = process.env.NODE_ENV === 'production';
 
 // Create global app object

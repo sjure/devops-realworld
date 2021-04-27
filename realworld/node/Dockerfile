@@ -8,5 +8,3 @@ COPY . /usr/src/app/
 
 
 EXPOSE 8080
-# Step 2/2: Run all
-CMD ["npm","start"]
